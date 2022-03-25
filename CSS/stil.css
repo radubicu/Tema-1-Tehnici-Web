@@ -1,0 +1,225 @@
+
+
+html {
+  background-color: #489494;
+}
+body {
+  font-family: Calibri;
+}
+.continut {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+.continut-mic {
+  border-top: 5px ridge #c9e6f7;
+  border-bottom: 5px ridge #c9e6f7;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+.main-area {
+  flex: 2.7;
+  margin-right: 2%;
+}
+.sidebar {
+  flex: 1;
+  background-image: linear-gradient(to left, #c9e6f7, #fff);
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+
+
+.important {
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+
+
+/* Reglare aspect pagina mai jos*/
+
+.fix {
+  clear: both;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+
+.sprite {
+  flex: 2;
+  display: flex;
+}
+
+/* Nav mai jos */
+
+.site-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.site-nav ul {
+  margin: 0;
+}
+
+.site-nav a {
+  font-family: "PT";
+  color: #1f91d8;
+  display: block;
+  text-decoration: none;
+  border: 3px solid #c9e6f7;
+  padding: 10px 30px;
+  border-bottom: 0;
+}
+
+.site-nav a:hover {
+  background-color: #c9e6f7;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-banner {
+  position: relative;
+  z-index: 9;
+}
+
+.ban {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3px 10px;
+  background-color: rgba(0, 40, 50, 0.6);
+}
+.ban p {
+  color: #fff;
+}
+
+/* Pt Sprites mai jos */
+
+.sprite ul {
+  flex: 1;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sprite li {
+  list-style: none;
+  text-indent: -9999px;
+  box-sizing: border-box;
+  width: 30%;
+}
+.sprite a {
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-image: url(../Poze/sprite.png);
+}
+.fb a {
+  background-position: 0 0;
+}
+.twit a {
+  background-position: -200px 0;
+}
+.insta a {
+  background-position: -100px -100px;
+}
+
+.fb a:hover {
+  background-position: -100px 0;
+}
+.twit a:hover {
+  background-position: -200px -100px;
+}
+.insta a:hover {
+  background-position: 0 -100px;
+}
+
+/* Strict pt text */
+
+h1 {
+  color: #1f91d8;
+  text-align: center;
+  font-family: "PT";
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  font-family: "PT";
+  color: #1f91d8;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+p {
+  color: black;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.subtitlu {
+  text-align: center;
+}
+
+footer .subtitlu span {
+  color: purple;
+}
+
+
+
+/* Responsive web*/
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .ban {
+    position: relative;
+  }
+
+  .site-nav li {
+    width: 100%;
+  }
+  .site-nav li a {
+    text-align: center;
+  }
+
+  .site-nav ul {
+    padding-right: 40px;
+  }
+
+  .sprite li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ 
+}
